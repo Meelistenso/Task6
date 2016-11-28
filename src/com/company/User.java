@@ -6,6 +6,7 @@ public class User {
     static {
         count=0;
     }
+
     public enum TelType
     {
         individual, twin, shared

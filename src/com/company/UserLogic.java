@@ -23,7 +23,7 @@ public class UserLogic {
     static User.TelType inputTelType(String text) {
         while (true) {
             try {
-                return User.TelType.valueOf(Main.inputString(text).toLowerCase());
+                return User.TelType.valueOf(Input.String(text).toLowerCase());
             } catch (IllegalArgumentException ex) {
                 System.out.println("Ошибка. [individual, twin, shared]");
             }
